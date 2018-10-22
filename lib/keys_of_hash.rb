@@ -7,6 +7,7 @@ class Hash
     
     self.each do |key,val|
       if val == arguments
+        puts key
         array.push(key)
       end
     
