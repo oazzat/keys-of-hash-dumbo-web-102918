@@ -3,11 +3,13 @@ require "pry"
 class Hash
   def keys_of(arguments)
     array = []
-    binding.pry
-    var = Hash[arguments]
-    binding.pry
-    array.push(var)
     
-    return array
+    self.each do |key,val|
+      if val == arguments
+        array.push(key)
+        return array
+      end
+    
+    end 
   end
 end
