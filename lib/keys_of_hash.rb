@@ -7,6 +7,7 @@ class Hash
     var = Hash[arguments]
     binding.pry
     array.push(var)
+    
     return array
   end
 end
