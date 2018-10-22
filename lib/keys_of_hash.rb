@@ -3,7 +3,8 @@ require "pry"
 class Hash
   def keys_of(arguments)
     array = []
-    array.push(arguments)
-    return array
+    var = Hash[arguments]
+    array.push(var)
+    return 
   end
 end
