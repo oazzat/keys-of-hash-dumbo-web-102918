@@ -5,6 +5,6 @@ class Hash
     array = []
     var = Hash[arguments]
     array.push(var)
-    return 
+    return array
   end
 end
