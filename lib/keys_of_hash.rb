@@ -3,7 +3,6 @@ require "pry"
 class Hash
   def keys_of(*arguments)
     array = []
-    binding.pry
     
     self.each do |key,val|
       arguments.each do |arg|
