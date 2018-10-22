@@ -6,10 +6,11 @@ class Hash
     binding.pry
     
     self.each do |key,val|
-      if val == arguments
-        puts key
+      arguments.each do |arg|
+      if val == arg
         array.push(key)
       end
+    end
     
     end 
     return array
