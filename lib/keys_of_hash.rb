@@ -7,9 +7,9 @@ class Hash
     self.each do |key,val|
       if val == arguments
         array.push(key)
-        return array
       end
     
     end 
+    return array
   end
 end
